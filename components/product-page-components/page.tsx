@@ -111,6 +111,8 @@ export default function ProductPage({ product }: ProductPageProps) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+
     const fetchProducts = async () => {
       const response = await getProductsInHomePage();
 
